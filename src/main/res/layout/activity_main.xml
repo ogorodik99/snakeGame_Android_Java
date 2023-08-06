@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Игровое поле -->
+    <FrameLayout
+        android:id="@+id/gameBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:padding="8dp">
+
+        <!-- Здесь будем рисовать змейку и еду -->
+
+    </FrameLayout>
+
+    <!-- Кнопки управления -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="Вверх" />
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="Влево" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="Вправо" />
+
+        <!-- Пустой элемент в первой колонке, чтобы кнопки были по центру -->
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="Вниз" />
+
+        <!-- Пустой элемент в последней колонке, чтобы кнопки были по центру -->
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+
+    </GridLayout>
+
+</FrameLayout>
+
